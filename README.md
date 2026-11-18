@@ -54,6 +54,18 @@ assets/img/                Logo, fotos de productos, café y sucursal
 - **Colores y tipografías:** variables CSS al inicio de `assets/css/style.css`.
 - **Videos e imágenes:** reemplazar los archivos de `assets/video/` y `assets/img/` manteniendo los nombres.
 
+## Deploy en Cloudflare Pages
+
+El sitio es 100% estático, no necesita build ni dependencias.
+
+1. En Cloudflare Pages: **Create a project → Connect to Git** y elegir el repo `FedericoFantacone/dov.pasteleria`.
+2. Framework preset: **None** (o "Static HTML").
+3. Build command: vacío.
+4. Build output directory: `/` (raíz del proyecto).
+5. Deploy.
+
+El archivo `_headers` ya trae cache largo para assets y headers de seguridad. El archivo `robots.txt` deja el sitio indexable por Google.
+
 ## Nota sobre las imágenes
 
 Las fotos y videos son material público de los canales de DOV (Instagram, Facebook y fichas de Restaurant Guru), usados solo como referencia para esta demo. Para la versión final conviene reemplazarlos por los originales en alta resolución del cliente.
